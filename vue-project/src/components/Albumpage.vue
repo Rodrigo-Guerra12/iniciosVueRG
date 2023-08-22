@@ -1,86 +1,72 @@
 <script setup>
-import Deskarado from './components/Deskarado.vue';
-import Debichos from './components/Debichos.vue';
-import Acontraluz from './components/Acontraluz.vue';
-import Destilar from './components/Destilar.vue';
-import Rating from './components/Rating.vue';
-
-
-
-
+import Deskarado from './Deskarado.vue';
+import Debichos from './Debichos.vue';
+import Acontraluz from './Acontraluz.vue';
+import Destilar from './Destilar.vue';
+import Rating from './Rating.vue';
 </script>
 
 <template>
+  <div class="prueba">
+    <img>
+    <div class="Cards">
 
-    
- <div class="prueba">
-
-  <img >
-  <div class="Cards">
-    
-    <div class="sombra">
-      <div class="conrating">
-        <Deskarado/>
-        <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    
+      <div class="sombra">
+        <div class="conrating">
+          <Deskarado />
+          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
+        </div>
       </div>
 
-    </div>
-    
-    
-    
-    <div class="sombra">
-      <div class="conrating">
-      <Debichos/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    
-    
+
+
+      <div class="sombra">
+        <div class="conrating">
+          <Debichos />
+          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
+        </div>
       </div>
-    </div>
-    
-    
-    
-    <div class="sombra">
-      <div class="conrating">
-      <Acontraluz/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
+
+
+
+      <div class="sombra">
+        <div class="conrating">
+          <Acontraluz />
+          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
+        </div>
       </div>
+
+
+      <div class="sombra">
+        <div class="conrating">
+          <Destilar />
+          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
+        </div>
+      </div>
+
+
     </div>
-    
 
-    <div class="sombra">
-      <div class="conrating">
-      <Destilar/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    </div>
-    </div>
-    
-
-</div>
-
-</div> 
-
-
-
- 
+  </div>
 </template>
 
 <style>
-
 #app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  
+
 }
+
 .conrating {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .Cards {
   display: flex;
   flex-direction: column;
@@ -94,13 +80,9 @@ import Rating from './components/Rating.vue';
   margin: 10px;
   height: auto;
 }
+
 .sombra:hover {
   cursor: pointer;
   box-shadow: inset 1px 2px 20px 0 blue;
 }
-
-
-
-
-
 </style>
