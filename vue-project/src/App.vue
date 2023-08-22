@@ -1,12 +1,5 @@
 <script setup>
-import Deskarado from './components/Deskarado.vue';
-import Debichos from './components/Debichos.vue';
-import Acontraluz from './components/Acontraluz.vue';
-import Destilar from './components/Destilar.vue';
-import Rating from './components/Rating.vue';
-
-
-
+import Albumpage from './components/Albumpage.vue';
 
 
 
@@ -16,59 +9,15 @@ import Rating from './components/Rating.vue';
 <template>
 
     
- <div class="prueba">
-  <div class="Cards">
-    
-    <div class="sombra">
-      <div class="conrating">
-        <Deskarado/>
-        <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    
-      </div>
-
-    </div>
-    
-    
-    
-    <div class="sombra">
-      <div class="conrating">
-      <Debichos/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    
-    
-      </div>
-    </div>
-    
-    
-    
-    <div class="sombra">
-      <div class="conrating">
-      <Acontraluz/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-      </div>
-    </div>
-    
-
-    <div class="sombra">
-      <div class="conrating">
-      <Destilar/>
-      <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-    </div>
-    </div>
-    
-
+<div>
+  <Albumpage/>
 </div>
-
-</div> 
-
-
-
  
 </template>
 
-<style scoped>
+<style>
 
-.prueba {
+#app {
   display: flex;
   flex-direction: column;
   justify-content: center;
