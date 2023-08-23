@@ -13,13 +13,17 @@
       <p>{{ infoCD }}</p>
     </div>
   </div>
+  
+  <div :albums="albums[0]">
+    <h2>{{ almbums }}</h2> 
+  </div>
+
 </template>
   
   <script>
   export default {
     props: {
-      
-    },
+      albums:Object    },
     data() {
       return {
         image: 'https://i.discogs.com/C63BrcGnLWn41Nai5npHGJs5tZLluOnsMRLclBQ-tE0/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTYx/MTgtMTQyNTk2NjMx/Ni0xMzkyLmpwZWc.jpeg',

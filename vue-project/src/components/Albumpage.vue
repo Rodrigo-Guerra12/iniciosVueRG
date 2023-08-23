@@ -1,54 +1,31 @@
-<script setup>
+<script >
 import Deskarado from './Deskarado.vue';
 import Debichos from './Debichos.vue';
 import Acontraluz from './Acontraluz.vue';
 import Destilar from './Destilar.vue';
 import Rating from './Rating.vue';
+
+export default {
+  {
+   
+  },
+  data() {
+    
+    return {
+      albums: [{name: 'Deskarado', imgURL: 'https://i.discogs.com/C63BrcGnLWn41Nai5npHGJs5tZLluOnsMRLclBQ-tE0/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTYx/MTgtMTQyNTk2NjMx/Ni0xMzkyLmpwZWc.jpeg', description: 'HolaHolaHolaHolaHolaHolaHolaHolaHolaHolaHola'}]
+        
+    }
+  }
+}
 </script>
 
 <template>
-  <div class="prueba">
-    <img>
-    <div class="Cards">
-
-      <div class="sombra">
-        <div class="conrating">
-          <Deskarado />
-          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-        </div>
-      </div>
-
-
-
-      <div class="sombra">
-        <div class="conrating">
-          <Debichos />
-          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-        </div>
-      </div>
-
-
-
-      <div class="sombra">
-        <div class="conrating">
-          <Acontraluz />
-          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-        </div>
-      </div>
-
-
-      <div class="sombra">
-        <div class="conrating">
-          <Destilar />
-          <Rating :max-rating="5" :initial-rating="3" @rating-selected="handleRatingSelected" />
-        </div>
-      </div>
-
-
-    </div>
+  <div :albums="albums[0]">
 
   </div>
 </template>
+
+
 
 <style>
 #app {
