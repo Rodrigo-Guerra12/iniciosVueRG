@@ -1,15 +1,13 @@
 <script setup>
-import Albumpage from './components/Albumpage.vue';
+import AlbumPage from './components/AlbumPage.vue';
 </script>
 
 <template>
-  <div>
-    <Albumpage />
-  </div>
+  <AlbumPage />
 </template>
 
 <style>
-#app {
+/* #app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,5 +39,5 @@ import Albumpage from './components/Albumpage.vue';
 .sombra:hover {
   cursor: pointer;
   box-shadow: inset 1px 2px 20px 0 blue;
-}
+} */
 </style>

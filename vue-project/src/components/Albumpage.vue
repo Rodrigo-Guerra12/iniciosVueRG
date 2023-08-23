@@ -1,28 +1,27 @@
 <script >
-import Deskarado from './Deskarado.vue';
-import Debichos from './Debichos.vue';
-import Acontraluz from './Acontraluz.vue';
-import Destilar from './Destilar.vue';
-import Rating from './Rating.vue';
+import AlbumCard from './AlbumCard.vue';
 
 export default {
-  {
-   
+  components: {
+    AlbumCard
   },
   data() {
-    
     return {
-      albums: [{name: 'Deskarado', imgURL: 'https://i.discogs.com/C63BrcGnLWn41Nai5npHGJs5tZLluOnsMRLclBQ-tE0/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTYx/MTgtMTQyNTk2NjMx/Ni0xMzkyLmpwZWc.jpeg', description: 'HolaHolaHolaHolaHolaHolaHolaHolaHolaHolaHola'}]
-        
+      albums: [
+        {
+          name: 'Deskarado',
+          imgURL: 'https://i.discogs.com/C63BrcGnLWn41Nai5npHGJs5tZLluOnsMRLclBQ-tE0/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTYx/MTgtMTQyNTk2NjMx/Ni0xMzkyLmpwZWc.jpeg',
+          description: 'HolaHolaHolaHolaHolaHolaHolaHolaHolaHolaHola'
+        }
+      ]
     }
   }
 }
 </script>
 
 <template>
-  <div :albums="albums[0]">
-
-  </div>
+  <h1>Album Page</h1>
+  <AlbumCard :album="albums[0]" />
 </template>
 
 
